@@ -24,10 +24,10 @@
 
     <#list messages as message>
     <div>
-        <b>${messages.id}</b>
-        <span>${messages.text}</span>
-        <i>${messages.tag}</i>
-        <strong>${messages.authorName}</strong>
+        <b>${message.id}</b>
+        <span>${message.text}</span>
+        <i>${message.tag}</i>
+        <strong>${message.authorName}</strong>
     </div>
         <#else >
         No message

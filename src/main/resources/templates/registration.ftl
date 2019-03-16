@@ -7,6 +7,6 @@ Add new USER
 ${message?ifExists}
 <@l.login "/registration" />
 
-<a href="/registration">Add new user</a>-->
+<a href="/registration">Add new user</a>
 
 </@c.page>

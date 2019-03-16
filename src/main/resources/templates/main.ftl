@@ -1,7 +1,12 @@
 <#import "parts/common.ftl" as c>
 <#import "parts/login.ftl" as l>
-<@c.page>
 
+<@c.page>
+    <div>
+
+
+
+    </div>
     <div>
         <@l.logout />
     </div>
@@ -14,6 +19,7 @@
         </form>
 
     </div>
+
 
     <div>Список повідомлень</div>
     <form method="post" action="filter">

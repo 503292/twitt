@@ -5,7 +5,7 @@
 <@c.page>
 Login page
 <@l.login "/login" />
-<a href="/registration.ftl">Add new user</a>
+<a href="/registration">Add new user</a>
 
 </@c.page>
 

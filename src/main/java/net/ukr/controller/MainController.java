@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.multipart.MultipartFile;
 
-
 import java.io.File;
 import java.io.IOException;
 import java.util.Map;
@@ -35,14 +34,15 @@ public class MainController {
     @GetMapping("/main")
     public String main(@RequestParam(required = false, defaultValue = "") String filter, Model model) {
         Iterable<Message> messages = messageRepo.findAll();
+
         if (filter != null && !filter.isEmpty()) {
             messages = messageRepo.findByTag(filter);
         } else {
             messages = messageRepo.findAll();
         }
+
         model.addAttribute("messages", messages);
         model.addAttribute("filter", filter);
-
 
         return "main";
     }
@@ -56,8 +56,9 @@ public class MainController {
     ) throws IOException {
         Message message = new Message(text, tag, user);
 
-        if(file != null && !file.getOriginalFilename().isEmpty()){
+        if (file != null && !file.getOriginalFilename().isEmpty()) {
             File uploadDir = new File(uploadPath);
+
             if (!uploadDir.exists()) {
                 uploadDir.mkdir();
             }
@@ -80,6 +81,4 @@ public class MainController {
 
         return "main";
     }
-
-
 }

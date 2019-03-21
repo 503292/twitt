@@ -1,0 +1,14 @@
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\domain\User.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\service\UserService.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\controller\RegistrationController.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\config\MailConfig.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\domain\Role.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\domain\Message.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\repos\UserRepo.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\service\MailSender.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\controller\MainController.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\Application.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\repos\MessageRepo.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\config\WebSecurityConfig.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\controller\UserController.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\config\MvcConfig.java

@@ -25,7 +25,7 @@
         </ul>
 
         <#-- вивід імені користувача або "unknown" в правому кутку екрана -->
-        <div class="navbar-text">${name}</div>
+        <div class="navbar-text mr-3">${name}</div>
         <@l.logout />
 
     </div>

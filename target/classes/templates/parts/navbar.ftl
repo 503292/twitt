@@ -1,4 +1,5 @@
 <#include "security.ftl">
+<#import "login.ftl" as l>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="/">Twitt</a>
@@ -25,6 +26,7 @@
 
         <#-- вивід імені користувача або "unknown" в правому кутку екрана -->
         <div class="navbar-text">${name}</div>
+        <@l.logout />
 
     </div>
 </nav>

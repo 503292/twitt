@@ -43,16 +43,22 @@
 
 
     <#list messages as message>
-        <div>
-            <b>${message.id}</b>
-            <span>${message.text}</span>
-            <i>${message.tag}</i>
-            <strong>${message.authorName}</strong>
+    <#-- відступ зверху і з низу 3 одиниці (my-3)-->
+        <div class="card my-3" style="width: 18rem;">
             <div>
                 <#if message.filename??>
-                    <img src="/img/${message.filename}"
+                    <img src="/img/${message.filename}" class="card-img-top">
                 </#if>
             </div>
+            <#-- відступ зі всіх сторін на 2 одиниці (m-2)-->
+            <div class="m-2">
+                <span>${message.text}</span>
+                <i>${message.tag}</i>
+            </div>
+            <div class="card-footer text-muted">
+                ${message.authorName}
+            </div>
+
         </div>
     <#else >
         No message

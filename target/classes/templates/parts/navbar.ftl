@@ -22,6 +22,11 @@
                     <a class="nav-link" href="/user">User list</a>
                 </li>
             </#if>
+            <#if user??> <#-- якщо user авторизований  -->
+                <li class="nav-item">
+                    <a class="nav-link" href="/user/profile">Profile</a>
+                </li>
+            </#if>
         </ul>
 
         <#-- вивід імені користувача або "unknown" в правому кутку екрана -->

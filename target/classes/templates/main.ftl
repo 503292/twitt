@@ -19,8 +19,14 @@
         <div class="form-group mt-3">
             <form method="post" enctype="multipart/form-data">
                 <div class="form-group">
-                    <input type="text" class="form-control" name="text" placeholder="Введіть повідомлення"/>
+                    <input type="text" class="form-control ${(textError??)?string('is-invalid', '')}"
+                          value="<#if message??>${message.text}</#if>" name="text" placeholder="Введіть повідомлення"/>
                 </div>
+                <#if textError??>
+                    <div class="invalid-feedback">
+                        Please provide a valid state.
+                    </div>
+                </#if>
                 <div class="form-group">
                     <input type="text" class="form-control" name="tag" placeholder="Введіть тег"/>
                 </div>
@@ -28,7 +34,7 @@
                     <div class="custom-file">
 
                         <label class="custom-file-label" for="customFile">Choose file</label>
-                        <div><input type="file"  name="file" id="customFile"></div>
+                        <div><input type="file" name="file" id="customFile"></div>
                     </div>
                 </div>
                 <input type="hidden" name="_csrf" value="${_csrf.token}"/>

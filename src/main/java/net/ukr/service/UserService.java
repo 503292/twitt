@@ -53,7 +53,7 @@ public class UserService implements UserDetailsService {
     private void sendMessage(User user) {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
-                    "Hello, %s \n\r" +
+                    "Hello, %s! \n" +
                             "Welcome to Twitt. Please, visit next link: http://localhost:8080/activate/%s",
                     user.getUsername(),
                     user.getActivationCode()
@@ -69,6 +69,7 @@ public class UserService implements UserDetailsService {
         if (user == null) {
             return false;
         }
+
         user.setActivationCode(null);
 
         userRepo.save(user);

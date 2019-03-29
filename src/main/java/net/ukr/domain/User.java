@@ -13,7 +13,7 @@ import java.util.Set;
 @Table(name = "usr")
 public class User implements UserDetails {
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @NotBlank(message = "User name cannot be empty")
@@ -25,7 +25,7 @@ public class User implements UserDetails {
     private String password2;
     private boolean active;
 
-    @Email(message = "Email is not corect")
+    @Email(message = "Email is not correct")
     @NotBlank(message = "Email cannot be empty")
     private String email;
     private String activationCode;
@@ -50,7 +50,6 @@ public class User implements UserDetails {
     public String getUsername() {
         return username;
     }
-
 
     @Override
     public boolean isAccountNonExpired() {

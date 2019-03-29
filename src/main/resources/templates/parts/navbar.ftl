@@ -16,7 +16,6 @@
             <li class="nav-item">
                 <a class="nav-link" href="/main">Messages</a>
             </li>
-
             <#if isAdmin> <#-- ховає ссилку на  User list для USERa  -->
                 <li class="nav-item">
                     <a class="nav-link" href="/user">User list</a>
@@ -32,6 +31,5 @@
         <#-- вивід імені користувача або "unknown" в правому кутку екрана -->
         <div class="navbar-text mr-3">${name}</div>
         <@l.logout />
-
     </div>
 </nav>

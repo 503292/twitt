@@ -3,6 +3,7 @@
 <#--noinspection FtlWellformednessInspection-->
 <@c.page>
     List of users
+
     <table>
         <thead>
         <tr>
@@ -11,8 +12,8 @@
             <th></th>
         </tr>
         </thead>
-        <tbody></tbody>
-        <#list  users as user>
+        <tbody>
+        <#list users as user>
             <tr>
                 <td>${user.username}</td>
                 <td><#list user.roles as role>${role}<#sep>, </#list></td>

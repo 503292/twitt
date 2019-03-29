@@ -5,6 +5,7 @@ net\ukr\controller\UserController.class
 net\ukr\domain\Message.class
 net\ukr\Application.class
 net\ukr\config\MailConfig.class
+net\ukr\controller\ControllerUtils.class
 net\ukr\config\WebSecurityConfig.class
 net\ukr\controller\RegistrationController.class
 net\ukr\repos\MessageRepo.class

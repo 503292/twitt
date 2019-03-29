@@ -1,7 +1,5 @@
 package net.ukr.config;
 
-import freemarker.template.utility.StringUtil;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

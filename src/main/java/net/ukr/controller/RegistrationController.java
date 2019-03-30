@@ -25,7 +25,7 @@ public class RegistrationController {
 
     @PostMapping("/registration")
     public String addUser(@Valid User user, BindingResult bindingResult, Model model) {
-        if (user.getPassword() != null && !user.getPassword().equals(user.getPassword2()) ){
+        if (user.getPassword() != null && !user.getPassword().equals(user.getPassword2())){
             model.addAttribute("passwordError", "Password are different!");
         }
         if (bindingResult.hasErrors()){

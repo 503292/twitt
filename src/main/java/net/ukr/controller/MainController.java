@@ -26,7 +26,7 @@ public class MainController {
     private MessageRepo messageRepo;
 
     @Value("${upload.path}")
-    private  String uploadPath;
+    private String uploadPath;
 
     @GetMapping("/")
     public String greeting(Map<String, Object> model) {
@@ -90,9 +90,6 @@ public class MainController {
 
         model.addAttribute("messages", messages);
 
-
         return "main";
     }
-
-
 }

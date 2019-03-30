@@ -20,8 +20,9 @@ public class User implements UserDetails {
     private String username;
     @NotBlank(message = "Password cannot be empty")
     private String password;
-    @Transient  // ігнор для Hibernate
-//    @NotBlank(message = "Password confirmation cannot be empty")
+
+
+    @Transient  // ігнор для Hibernate   //    @NotBlank(message = "Password confirmation cannot be empty")
     private String password2;
     private boolean active;
 

@@ -1,5 +1,4 @@
 <#-- не показує для USER скриту ссилку для ADMIN-->
-
 <#assign
 known = Session.SPRING_SECURITY_CONTEXT??
 >

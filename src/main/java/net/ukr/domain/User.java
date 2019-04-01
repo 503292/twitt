@@ -20,7 +20,6 @@ public class User implements UserDetails {
     private String username;
     @NotBlank(message = "Password cannot be empty")
     private String password;
-
     private boolean active;
 
     @Email(message = "Email is not correct")
@@ -117,5 +116,4 @@ public class User implements UserDetails {
     public void setActivationCode(String activationCode) {
         this.activationCode = activationCode;
     }
-
 }

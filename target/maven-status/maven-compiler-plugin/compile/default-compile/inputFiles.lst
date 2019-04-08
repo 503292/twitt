@@ -7,9 +7,11 @@ E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\domain\Message.ja
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\repos\UserRepo.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\service\MailSender.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\controller\MainController.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\config\EncriptionConfig.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\Application.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\repos\MessageRepo.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\config\WebSecurityConfig.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\controller\UserController.java
+E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\domain\dto\CaptchaResponseDto.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\controller\ControllerUtils.java
 E:\Learn\Project Java\IdeaProjects\twitt\src\main\java\net\ukr\config\MvcConfig.java

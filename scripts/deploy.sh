@@ -14,6 +14,7 @@ ssh -i ~/.ssh/id_rsa dru@192.168.1.112 <<EOF
 
 pgrep java | xargs kill -9
 nohup java -jar twitt-1.0-SNAPSHOT.jar > log.txt &
+
 EOF
 
 echo 'Bye'

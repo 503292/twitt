@@ -63,7 +63,7 @@ public class UserService implements UserDetailsService {
         if (!StringUtils.isEmpty(user.getEmail())) {
             String message = String.format(
                     "Hello, %s! \n" +
-                            "Welcome to Twitt. Please, visit next link: https://%s/activate/%s",
+                            "Welcome to Twitt. Please, visit next link: http://%s/activate/%s",
                     user.getUsername(),
                     hostname,
                     user.getActivationCode()

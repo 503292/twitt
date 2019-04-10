@@ -6,7 +6,7 @@
     <#-- відступ зверху і з низу 3 одиниці (my-3)-->
         <div class="card my-3">
             <#if message.filename??>
-                <img src="/img/${message.filename}" class="card-img-top">
+                <img src="/img/${message.filename}" class="card-img-top" />
             </#if>
             <#-- відступ зі всіх сторін на 2 одиниці (m-2)-->
             <div class="m-2">

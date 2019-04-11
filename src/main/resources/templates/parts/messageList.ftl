@@ -1,8 +1,10 @@
 <#include "security.ftl">
+<#import "pager.ftl" as p>
 
+<@p.pager url page />
 <#-- вивід повідомлень колонками-->
 <div class="card-columns" id="message-list">
-    <#list messages as message>
+    <#list page.content as message>
     <#-- відступ зверху і з низу 3 одиниці (my-3)-->
         <div class="card my-3" data-id="${message.id}">
             <#if message.filename??>
@@ -26,3 +28,5 @@
         No message
     </#list>
 </div>
+
+<@p.pager url page />

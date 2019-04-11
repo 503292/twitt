@@ -1,10 +1,10 @@
 <#include "security.ftl">
 
 <#-- вивід повідомлень колонками-->
-<div class="card-columns">
+<div class="card-columns" id="message-list">
     <#list messages as message>
     <#-- відступ зверху і з низу 3 одиниці (my-3)-->
-        <div class="card my-3">
+        <div class="card my-3" data-id="${message.id}">
             <#if message.filename??>
                 <img src="/img/${message.filename}" class="card-img-top" />
             </#if>

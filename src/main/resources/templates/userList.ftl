@@ -1,8 +1,7 @@
 <#import "parts/common.ftl" as c>
 
 <#--noinspection FtlWellformednessInspection-->
-<@c.page>
-    List of users
+<@c.page>List of users
 
     <table>
         <thead>

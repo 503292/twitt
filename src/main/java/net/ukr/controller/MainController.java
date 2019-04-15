@@ -114,8 +114,12 @@ public class MainController {
             @AuthenticationPrincipal User currentUser,
             @PathVariable User user,
             Model model,
-            @RequestParam(required = false) Message message
+            @RequestParam(required = false) Message message,
+            @PageableDefault(sort = {"id"}, direction = Sort.Direction.DESC) Pageable pageble
+
     ) {
+        Page<Message> page = messageRepo.findByAuthor(user, pageble);
+
         Set<Message> messages = user.getMessages();
 
         model.addAttribute("userChannel", user);
@@ -125,6 +129,9 @@ public class MainController {
         model.addAttribute("messages", messages);
         model.addAttribute("message", message);
         model.addAttribute("isCurrentUser", currentUser.equals(user));
+        model.addAttribute("url", "/user-messages/" + user.getId());
+        model.addAttribute("page", page);
+
 
         return "userMessages";
     }

@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e44dec4-2484-4271-8369-8b8253baa901" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/ukr/controller/MainController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ukr/controller/MainController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/net/ukr/repos/MessageRepo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/net/ukr/repos/MessageRepo.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -61,8 +60,29 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
+            <state relative-caret-position="199">
+              <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="136">
+              <caret line="71" column="61" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="61" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="187">
+              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
             </state>
           </provider>
         </entry>
@@ -90,7 +110,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/repos/MessageRepo.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="238">
@@ -103,22 +123,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/config/WebSecurityConfig.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/LoginTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
+            <state relative-caret-position="85">
+              <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -156,6 +164,7 @@
         <option value="Interface" />
         <option value="HTML File" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -165,7 +174,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/net/ukr/service/MailSender.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/repos/UserRepo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/db.template/V1__Init_DB.sql" />
         <option value="$PROJECT_DIR$/src/main/resources/db.migration/V1__Init_DB.sql" />
@@ -213,9 +221,10 @@
         <option value="$PROJECT_DIR$/src/main/resources/templates/userList.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/navbar.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/messageList.ftl" />
-        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/repos/MessageRepo.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl" />
+        <option value="$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java" />
       </list>
     </option>
   </component>
@@ -247,7 +256,7 @@
       <select />
     </treeState>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -340,6 +349,16 @@
               <item name="twitt" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="ukr" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -358,6 +377,46 @@
               <item name="resources" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
               <item name="parts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="ukr" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twitt" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="net" type="462c0819:PsiDirectoryNode" />
+              <item name="ukr" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twitt" type="b2602c69:ProjectViewProjectNode" />
@@ -382,7 +441,9 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555337151252" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555406917339" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="last_opened_file_path" value="$USER_HOME$/Desktop/sweater-AddPagination/sweater-AddPagination/src/main/resources/templates/parts/pager.ftl" />
@@ -397,15 +458,21 @@
     <property name="two.files.diff.last.used.folder" value="$USER_HOME$/Desktop/sweater-AddPagination/sweater-AddPagination/src/main/resources/templates/parts" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\test\resources" />
-      <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\main\resources\templates" />
-      <recent name="E:\Навчання\Проекти\IdeaProjects\twitt\src\main\resources\templates" />
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="net.ukr.service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\main\resources\templates\parts" />
       <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\main\resources" />
       <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\main\resources\db" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\test\resources" />
+      <recent name="E:\Learn\Project Java\IdeaProjects\twitt\src\main\resources\templates" />
+      <recent name="E:\Навчання\Проекти\IdeaProjects\twitt\src\main\resources\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -420,7 +487,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.Application">
+  <component name="RunManager" selected="JUnit.UserServiceTest">
     <configuration name="MainControllerTest.addMessageToListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="twitt" />
       <extension name="coverage">
@@ -432,22 +499,6 @@
       <option name="PACKAGE_NAME" value="net.ukr" />
       <option name="MAIN_CLASS_NAME" value="net.ukr.MainControllerTest" />
       <option name="METHOD_NAME" value="addMessageToListTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainControllerTest.filterMessageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="twitt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.ukr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.ukr" />
-      <option name="MAIN_CLASS_NAME" value="net.ukr.MainControllerTest" />
-      <option name="METHOD_NAME" value="filterMessageTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -465,6 +516,21 @@
       <option name="MAIN_CLASS_NAME" value="net.ukr.MainControllerTest" />
       <option name="METHOD_NAME" value="mainPageTest" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="twitt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.ukr.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.ukr.service" />
+      <option name="MAIN_CLASS_NAME" value="net.ukr.service.UserServiceTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -500,18 +566,18 @@
     </configuration>
     <list>
       <item itemvalue="JUnit.MainControllerTest.addMessageToListTest" />
-      <item itemvalue="JUnit.MainControllerTest.filterMessageTest" />
       <item itemvalue="JUnit.MainControllerTest.mainPageTest" />
       <item itemvalue="JUnit.net.ukr in twitt" />
       <item itemvalue="Spring Boot.Application" />
+      <item itemvalue="JUnit.UserServiceTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.net.ukr in twitt" />
         <item itemvalue="JUnit.MainControllerTest.addMessageToListTest" />
         <item itemvalue="JUnit.MainControllerTest.mainPageTest" />
-        <item itemvalue="JUnit.MainControllerTest.filterMessageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -551,29 +617,11 @@
       <workItem from="1554963778025" duration="8522000" />
       <workItem from="1554994351933" duration="4367000" />
       <workItem from="1555054951153" duration="627000" />
-      <workItem from="1555323477449" duration="6152000" />
+      <workItem from="1555323477449" duration="10344000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainControllerTest - 2019.04.11 at 10h 08m 58s.xml">
-      <configuration name="MainControllerTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainControllerTest_messageListTest - 2019.04.11 at 10h 10m 55s.xml">
-      <configuration name="MainControllerTest.messageListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainControllerTest_filterMessageTest - 2019.04.11 at 10h 11m 35s.xml">
-      <configuration name="MainControllerTest.filterMessageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainControllerTest_filterMessageTest - 2019.04.11 at 10h 14m 08s.xml">
-      <configuration name="MainControllerTest.filterMessageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainControllerTest_filterMessageTest - 2019.04.11 at 10h 14m 30s.xml">
-      <configuration name="MainControllerTest.filterMessageTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="MainControllerTest_mainPageTest - 2019.04.11 at 10h 18m 05s.xml">
-      <configuration name="MainControllerTest.mainPageTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="MainControllerTest_addMessageToListTest - 2019.04.11 at 10h 21m 33s.xml">
       <configuration name="MainControllerTest.addMessageToListTest" configurationId="JUnit" />
     </history-entry>
@@ -586,9 +634,27 @@
     <history-entry file="net_ukr_in_twitt - 2019.04.11 at 12h 20m 00s.xml">
       <configuration name="net.ukr in twitt" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 11m 11s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 14m 45s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 22m 11s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 23m 32s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 24m 36s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 26m 32s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="259203000" />
+    <option name="totallyTimeSpent" value="263395000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -600,10 +666,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <frame x="-6" y="0" width="781" height="830" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49871466" visible="true" weight="0.16979866" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49871466" weight="0.2662968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="Image Layers" order="3" />
@@ -613,16 +679,16 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4981774" weight="0.2336874" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4965326" visible="true" weight="0.23963134" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.23502304" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49939248" weight="0.04608295" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49939248" weight="0.2737921" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5018226" side_tool="true" weight="0.43317974" />
-      <window_info active="true" anchor="bottom" id="Messages" order="11" visible="true" weight="0.32650074" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5034674" side_tool="true" weight="0.31336406" />
+      <window_info anchor="bottom" id="Messages" order="11" weight="0.32650074" />
       <window_info anchor="bottom" id="Java Enterprise" order="12" />
       <window_info anchor="bottom" id="Database Changes" order="13" weight="0.329429" />
       <window_info anchor="bottom" id="Version Control" order="14" />
@@ -654,13 +720,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/registration.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="10" selection-start-line="7" selection-start-column="10" selection-end-line="7" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userEdit.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
@@ -829,16 +888,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="144" selection-start-line="144" selection-end-line="144" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/userMessages.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -988,16 +1037,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/LoginTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="21" selection-start-line="25" selection-start-column="21" selection-end-line="25" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/MainControllerTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1034,13 +1073,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="22" lean-forward="true" selection-start-line="16" selection-start-column="22" selection-end-line="16" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/messageList.ftl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="451">
@@ -1065,6 +1097,40 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="199">
+          <caret line="38" column="17" selection-start-line="38" selection-start-column="17" selection-end-line="38" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/LoginTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="23" selection-start-line="23" selection-end-line="24" selection-end-column="15" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="71" column="61" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="61" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
         </state>
       </provider>
     </entry>

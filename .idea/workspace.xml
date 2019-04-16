@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3e44dec4-2484-4271-8369-8b8253baa901" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -69,8 +69,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="71" column="61" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="61" />
+            <state relative-caret-position="155">
+              <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -81,8 +81,11 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+            <state relative-caret-position="90">
+              <caret line="95" column="43" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="95" selection-end-column="43" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -202,7 +205,6 @@
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/domain/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/registration.ftl" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/userMessages.ftl" />
-        <option value="$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/subscriptions.ftl" />
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/controller/UserController.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
@@ -224,6 +226,7 @@
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/controller/MainController.java" />
         <option value="$PROJECT_DIR$/src/main/java/net/ukr/repos/MessageRepo.java" />
         <option value="$PROJECT_DIR$/src/main/resources/templates/parts/pager.ftl" />
+        <option value="$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java" />
         <option value="$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java" />
       </list>
     </option>
@@ -441,7 +444,7 @@
     <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555406917339" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555408341501" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
     <property name="database.console.LAST_STATE" value="false" />
@@ -487,39 +490,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.UserServiceTest">
-    <configuration name="MainControllerTest.addMessageToListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="twitt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.ukr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.ukr" />
-      <option name="MAIN_CLASS_NAME" value="net.ukr.MainControllerTest" />
-      <option name="METHOD_NAME" value="addMessageToListTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MainControllerTest.mainPageTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="twitt" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="net.ukr.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="net.ukr" />
-      <option name="MAIN_CLASS_NAME" value="net.ukr.MainControllerTest" />
-      <option name="METHOD_NAME" value="mainPageTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.UserServiceTest.activateUserFailTest">
     <configuration name="UserServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="twitt" />
       <extension name="coverage">
@@ -531,6 +502,38 @@
       <option name="PACKAGE_NAME" value="net.ukr.service" />
       <option name="MAIN_CLASS_NAME" value="net.ukr.service.UserServiceTest" />
       <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.activateUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="twitt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.ukr.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.ukr.service" />
+      <option name="MAIN_CLASS_NAME" value="net.ukr.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="activateUser" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceTest.activateUserFailTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="twitt" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="net.ukr.service.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="net.ukr.service" />
+      <option name="MAIN_CLASS_NAME" value="net.ukr.service.UserServiceTest" />
+      <option name="METHOD_NAME" value="activateUserFailTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -565,19 +568,19 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.MainControllerTest.addMessageToListTest" />
-      <item itemvalue="JUnit.MainControllerTest.mainPageTest" />
       <item itemvalue="JUnit.net.ukr in twitt" />
       <item itemvalue="Spring Boot.Application" />
       <item itemvalue="JUnit.UserServiceTest" />
+      <item itemvalue="JUnit.UserServiceTest.activateUser" />
+      <item itemvalue="JUnit.UserServiceTest.activateUserFailTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.UserServiceTest.activateUserFailTest" />
+        <item itemvalue="JUnit.UserServiceTest.activateUser" />
         <item itemvalue="JUnit.UserServiceTest" />
         <item itemvalue="Spring Boot.Application" />
         <item itemvalue="JUnit.net.ukr in twitt" />
-        <item itemvalue="JUnit.MainControllerTest.addMessageToListTest" />
-        <item itemvalue="JUnit.MainControllerTest.mainPageTest" />
       </list>
     </recent_temporary>
   </component>
@@ -617,29 +620,11 @@
       <workItem from="1554963778025" duration="8522000" />
       <workItem from="1554994351933" duration="4367000" />
       <workItem from="1555054951153" duration="627000" />
-      <workItem from="1555323477449" duration="10344000" />
+      <workItem from="1555323477449" duration="11698000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="MainControllerTest_addMessageToListTest - 2019.04.11 at 10h 21m 33s.xml">
-      <configuration name="MainControllerTest.addMessageToListTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="net_ukr_in_twitt - 2019.04.11 at 10h 22m 22s.xml">
-      <configuration name="net.ukr in twitt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="net_ukr_in_twitt - 2019.04.11 at 10h 25m 27s.xml">
-      <configuration name="net.ukr in twitt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="net_ukr_in_twitt - 2019.04.11 at 12h 20m 00s.xml">
-      <configuration name="net.ukr in twitt" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.04.16 at 12h 11m 11s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="UserServiceTest - 2019.04.16 at 12h 14m 45s.xml">
-      <configuration name="UserServiceTest" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="UserServiceTest - 2019.04.16 at 12h 22m 11s.xml">
       <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
@@ -652,9 +637,27 @@
     <history-entry file="UserServiceTest - 2019.04.16 at 12h 26m 32s.xml">
       <configuration name="UserServiceTest" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 27m 51s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 28m 32s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 35m 06s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 37m 00s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest - 2019.04.16 at 12h 44m 58s.xml">
+      <configuration name="UserServiceTest" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="UserServiceTest_activateUser - 2019.04.16 at 12h 46m 06s.xml">
+      <configuration name="UserServiceTest.activateUser" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="263395000" />
+    <option name="totallyTimeSpent" value="264749000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -667,7 +670,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-6" y="0" width="781" height="830" extended-state="0" />
-    <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49871466" weight="0.2662968" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -679,13 +681,13 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.4965326" visible="true" weight="0.23963134" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.23502304" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4965326" weight="0.42703533" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.6298003" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32872504" />
       <window_info anchor="bottom" id="Spring" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49939248" weight="0.2737921" />
+      <window_info anchor="bottom" id="Terminal" order="8" sideWeight="0.49939248" weight="0.2734255" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.5034674" side_tool="true" weight="0.31336406" />
       <window_info anchor="bottom" id="Messages" order="11" weight="0.32650074" />
@@ -1119,8 +1121,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/net/ukr/service/UserService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="71" column="61" selection-start-line="71" selection-start-column="46" selection-end-line="71" selection-end-column="61" />
+        <state relative-caret-position="155">
+          <caret line="75" column="23" selection-start-line="75" selection-start-column="23" selection-end-line="75" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1129,8 +1131,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/net/ukr/service/UserServiceTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="43" column="8" selection-start-line="43" selection-start-column="8" selection-end-line="43" selection-end-column="8" />
+        <state relative-caret-position="90">
+          <caret line="95" column="43" lean-forward="true" selection-start-line="93" selection-start-column="8" selection-end-line="95" selection-end-column="43" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

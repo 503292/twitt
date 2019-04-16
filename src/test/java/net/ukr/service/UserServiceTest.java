@@ -18,6 +18,8 @@ import org.springframework.test.context.junit4.SpringRunner;
 import java.util.Collections;
 
 import static org.junit.Assert.*;
+import static org.mockito.ArgumentMatchers.booleanThat;
+import static org.mockito.Mockito.doReturn;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
@@ -29,7 +31,7 @@ public class UserServiceTest {
     private UserRepo userRepo;
 
     @MockBean
-    private  MailSender mailSender;
+    private MailSender mailSender;
 
     @MockBean
     private PasswordEncoder passwordEncoder;
@@ -53,6 +55,59 @@ public class UserServiceTest {
                         ArgumentMatchers.anyString(),
                         ArgumentMatchers.anyString()
                 );
+
+    }
+
+    @Test
+    public void addUserFailTest() {
+        User user = new User();
+
+        user.setUsername("John");
+
+        Mockito.doReturn(new User())
+                .when(userRepo)
+                .findByUsername("John");
+
+        boolean isUserCreated = userService.addUser(user);
+
+        Assert.assertFalse(isUserCreated);
+
+        Mockito.verify(userRepo, Mockito.times(0)).save(ArgumentMatchers.any(User.class));
+        Mockito.verify(mailSender, Mockito.times(0))
+                .send(
+                        ArgumentMatchers.anyString(),
+                        ArgumentMatchers.anyString(),
+                        ArgumentMatchers.anyString()
+                );
+
+    }
+
+    @Test
+    public void activateUser() {
+        User user = new User();
+
+        user.setActivationCode("bingo!");
+
+        Mockito.doReturn(user)
+                .when(userRepo)
+                .findByActivationCode("activate");
+
+        boolean isUserActivated = userService.activateUser("activate");
+
+        Assert.assertTrue(isUserActivated);
+        Assert.assertNull(user.getActivationCode());
+
+        Mockito.verify(userRepo, Mockito.times(1)).save(user);
+    }
+
+    @Test
+    public void activateUserFailTest() {
+        boolean isUserActivated = userService.activateUser("activate me");
+
+        Assert.assertFalse(isUserActivated);
+
+        Mockito.verify(userRepo, Mockito.times(0)).save(ArgumentMatchers.any(User.class));
+
 
     }
 }

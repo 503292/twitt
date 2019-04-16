@@ -25,14 +25,14 @@
                 crossorigin="anonymous"></script>
         <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
                 integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-                crossorigin="anonymous">
+                crossorigin="anonymous"></script>
+
         <style>
             .turbolinks-progress-bar {
                 height: 2px;
                 background-color: navy;
             }
         </style>
-        </script>
     </head>
     <body>
     <#include "navbar.ftl"/>

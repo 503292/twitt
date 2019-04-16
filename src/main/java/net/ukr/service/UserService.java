@@ -144,6 +144,5 @@ public class UserService implements UserDetailsService {
         user.getSubscribers().remove(currentUser);
 
         userRepo.save(user);
-
     }
 }

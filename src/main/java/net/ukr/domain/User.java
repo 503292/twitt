@@ -39,18 +39,18 @@ public class User implements UserDetails {
     @ManyToMany
     @JoinTable(
             name = "user_subscriptions",
-            joinColumns = {@JoinColumn(name = "channel_id")},
-            inverseJoinColumns = {@JoinColumn(name = "subscriber_id")}
+            joinColumns = { @JoinColumn(name = "channel_id") },
+            inverseJoinColumns = { @JoinColumn(name = "subscriber_id") }
     )
-    public Set<User> subscribers = new HashSet<>();
+    private Set<User> subscribers = new HashSet<>();
 
     @ManyToMany
     @JoinTable(
             name = "user_subscriptions",
-            joinColumns = {@JoinColumn(name = "subscriber_id")},
-            inverseJoinColumns = {@JoinColumn(name = "channel_id")}
+            joinColumns = { @JoinColumn(name = "subscriber_id") },
+            inverseJoinColumns = { @JoinColumn(name = "channel_id") }
     )
-    public Set<User> subscriptions = new HashSet<>();
+    private Set<User> subscriptions = new HashSet<>();
 
     @Override
     public boolean equals(Object o) {

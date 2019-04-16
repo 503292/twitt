@@ -1,7 +1,7 @@
 package net.ukr.service;
 
-import net.ukr.domain.Message;
 import net.ukr.domain.User;
+import net.ukr.domain.dto.MessageDto;
 import net.ukr.repos.MessageRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
@@ -13,19 +13,15 @@ public class MessageService {
     @Autowired
     private MessageRepo messageRepo;
 
-    public Page<Message> messageList(Pageable pageable, String filter){
-
+    public Page<MessageDto> messageList(Pageable pageable, String filter, User user) {
         if (filter != null && !filter.isEmpty()) {
-            return  messageRepo.findByTag(filter, pageable);
+            return messageRepo.findByTag(filter, pageable, user);
         } else {
-            return  messageRepo.findAll(pageable);
+            return messageRepo.findAll(pageable, user);
         }
-
     }
 
-
-    public Page<Message> messageListForUser(Pageable pageble, User currentUser, User author) {
-        return messageRepo.findByUser(pageble, author);
-
+    public Page<MessageDto> messageListForUser(Pageable pageable, User currentUser, User author) {
+        return messageRepo.findByUser(pageable, currentUser, author);
     }
 }
